@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">COMP3074Assignment1</string>
+    <string name="pay_label">Enter Hourly pay</string>
+    <string name="hour_label">Enter Hours Worked</string>
+</resources>
