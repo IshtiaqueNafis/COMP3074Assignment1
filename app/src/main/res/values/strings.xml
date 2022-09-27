@@ -14,6 +14,6 @@
     <string name="college_map_site_text">School Map</string>
     <string name="github_site">https://github.com/IshtiaqueNafis</string>
     <string name="school_site">https://www.georgebrown.ca/campaign/your-own?creative=566921563852&amp;keyword=george%20brown%20college&amp;matchtype=e&amp;network=g&amp;device=c&amp;gclid=CjwKCAjwm8WZBhBUEiwA178UnJ6fFi0DNPZ7Q7FHMhJw-tLL5kDxPFb6Ts_kMv9RbWdPDkd8cPi8yxoCREQQAvD_BwE</string>
-    <string name="college_map">geo:43.6760° N, 79.4107</string>
+    <string name="college_map">geo:43.6760465,-79.4152077,17</string>
 
 </resources>
