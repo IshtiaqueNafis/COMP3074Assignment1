@@ -4,12 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:textAlignment="center"
+
     tools:context=".ui.MainActivity">
+
+    <Button
+        android:id="@+id/calulateTaxBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/calulate_tax"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taxResultText" />
 
     <EditText
         android:id="@+id/hourlyRateInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/pay_label"
@@ -17,18 +30,16 @@
         android:minHeight="48dp"
         android:textAlignment="center"
         android:textColorHint="#757575"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.572"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.215" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <EditText
         android:id="@+id/noOfHoursInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="328dp"
+        android:layout_marginTop="20dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/hour_label"
@@ -36,44 +47,45 @@
         android:minHeight="48dp"
         android:textAlignment="center"
         android:textColorHint="#757575"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.572"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/hourlyRateInput"
-        app:layout_constraintVertical_bias="0.331" />
+        app:layout_constraintTop_toBottomOf="@+id/hourlyRateInput" />
 
-    <LinearLayout
-        android:layout_width="409dp"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="414dp"
         android:layout_height="214dp"
-        android:layout_marginTop="136dp"
-        android:layout_marginBottom="16dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/tax_image"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/noOfHoursInput"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tax" />
 
-        <Button
-            android:id="@+id/calculateTaxButton"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:background="@color/black"
-            android:backgroundTint="@color/teal_200"
-            android:backgroundTintMode="add"
-            android:shadowColor="@color/teal_200"
-            android:text="TAX"
-            android:textColor="#757575"
-            app:icon="@android:drawable/ic_menu_edit"
-            app:strokeColor="@color/teal_200" />
+    <TextView
+        android:id="@+id/taxResultText"
+        android:layout_width="290dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noOfHoursInput" />
 
-        <Button
-            android:id="@+id/resetButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Reset"
-            app:icon="@android:drawable/ic_menu_close_clear_cancel" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:text="@string/reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/calulateTaxBtn"
+        app:layout_constraintTop_toBottomOf="@+id/taxResultText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

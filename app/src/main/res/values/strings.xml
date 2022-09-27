@@ -1,5 +1,16 @@
 <resources>
-    <string name="app_name">COMP3074Assignment1</string>
+    <string name="app_name">Tax Calculator</string>
     <string name="pay_label">Enter Hourly pay</string>
     <string name="hour_label">Enter Hours Worked</string>
+    <string name="tax_image">tax Image</string>
+    <string name="calulate_tax">Calulate Tax</string>
+    <string name="reset">Reset</string>
+    <string name="about">About</string>
+    <string name="about_activity">About</string>
+    <string name="user_name">Nafis Ishtiaque</string>
+    <string name="student_number">101206872</string>
+    <string name="github_site">https://github.com/IshtiaqueNafis</string>
+    <string name="school_site">https://www.georgebrown.ca/campaign/your-own?creative=566921563852&amp;keyword=george%20brown%20college&amp;matchtype=e&amp;network=g&amp;device=c&amp;gclid=CjwKCAjwm8WZBhBUEiwA178UnJ6fFi0DNPZ7Q7FHMhJw-tLL5kDxPFb6Ts_kMv9RbWdPDkd8cPi8yxoCREQQAvD_BwE</string>
+    <string name="college_map">geo:43.6760° N, 79.4107</string>
+
 </resources>
