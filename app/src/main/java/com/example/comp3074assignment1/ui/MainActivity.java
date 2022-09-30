@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
     private EditText hourlyPayment;
     private EditText hoursWorked;
     private TextView taxResultOutput;
-    private MenuItem aboutMenuItem;
     //endregion
 
     @Override
@@ -34,12 +33,13 @@ public class MainActivity extends AppCompatActivity {
         taxResultOutput = findViewById(R.id.taxResultText);
         Button calculateTaxButton = findViewById(R.id.calulateTaxBtn);
         Button resetButton = findViewById(R.id.resetBtn);
-        aboutMenuItem = findViewById(R.id.about);
+        MenuItem aboutMenuItem = findViewById(R.id.about);
         calculateTax(calculateTaxButton);
         resetField(resetButton);
 
     }
 
+    //region *** methods ***
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
@@ -87,5 +87,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    //endregion
 
 }

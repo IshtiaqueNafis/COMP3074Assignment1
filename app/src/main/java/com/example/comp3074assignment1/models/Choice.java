@@ -6,13 +6,6 @@ public class Choice {
     private int actionId;
     //endregion
 
-    //region ***constructors***
-    public Choice(int textId, int actionId) {
-        this.textId = textId;
-        this.actionId = actionId;
-    }
-    //endregion
-
     //region ***getter & setter methods ***
     public int getTextId() {
         return textId;
@@ -30,4 +23,13 @@ public class Choice {
         this.actionId = actionId;
     }
     //endregion
+
+    //region ***constructors***
+    public Choice(int textId, int actionId) {
+        this.textId = textId;
+        this.actionId = actionId;
+    }
+    //endregion
+
+
 }

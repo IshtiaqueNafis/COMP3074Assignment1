@@ -11,26 +11,6 @@ public class About {
     private Choice schoolMapChoice;
     //endregion
 
-    //region ***Constructors ***
-    public About() {
-    }
-
-    public About(int imageId, int studentNameId, int studentId) {
-        this.imageId = imageId;
-        this.studentNameId = studentNameId;
-        this.studentId = studentId;
-    }
-
-    public About(int imageId, int studentNameId, int studentId, Choice githubChoice, Choice schoolWebChoice, Choice schoolMapChoice) {
-        this.imageId = imageId;
-        this.studentNameId = studentNameId;
-        this.studentId = studentId;
-        this.githubChoice = githubChoice;
-        this.schoolWebChoice = schoolWebChoice;
-        this.schoolMapChoice = schoolMapChoice;
-    }
-    //endregion
-
     //region *** getter & setter ***
     public int getImageId() {
         return imageId;
@@ -80,4 +60,26 @@ public class About {
         this.schoolMapChoice = schoolMapChoice;
     }
     //endregion
+
+    //region ***Constructors ***
+    public About() {
+    }
+
+    public About(int imageId, int studentNameId, int studentId) {
+        this.imageId = imageId;
+        this.studentNameId = studentNameId;
+        this.studentId = studentId;
+    }
+
+    public About(int imageId, int studentNameId, int studentId, Choice githubChoice, Choice schoolWebChoice, Choice schoolMapChoice) {
+        this.imageId = imageId;
+        this.studentNameId = studentNameId;
+        this.studentId = studentId;
+        this.githubChoice = githubChoice;
+        this.schoolWebChoice = schoolWebChoice;
+        this.schoolMapChoice = schoolMapChoice;
+    }
+    //endregion
+
+
 }

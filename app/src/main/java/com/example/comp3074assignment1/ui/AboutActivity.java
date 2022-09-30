@@ -18,13 +18,14 @@ import com.example.comp3074assignment1.models.Choice;
 
 public class AboutActivity extends AppCompatActivity {
 
-    private About about;
+    //region *** properties ***
     private ImageView profileView;
     private TextView studentName;
     private TextView studentId;
     private Button githubBtn;
     private Button schoolWebsiteButton;
     private Button schoolMapButton;
+    //endregion
 
 
     @Override
@@ -33,7 +34,7 @@ public class AboutActivity extends AppCompatActivity {
         setContentView(R.layout.activity_about);
         this.setTitle("About");
 
-        about = new About(
+        About about = new About(
                 R.drawable.profile, R.string.user_name, R.string.student_number,
                 new Choice(R.string.github_btn_text, R.string.github_site),
                 new Choice(R.string.school_site_text, R.string.school_site),
@@ -45,6 +46,7 @@ public class AboutActivity extends AppCompatActivity {
 
     }
 
+    //region ***Methods***
     private void initializePage() {
         profileView = findViewById(R.id.profileImage);
         studentName = findViewById(R.id.profile_name);
@@ -79,6 +81,7 @@ public class AboutActivity extends AppCompatActivity {
             }
         });
     }
+    //endregion
 
 
 }
